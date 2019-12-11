@@ -1,0 +1,33 @@
+<head>
+    <body>
+        <p>
+        <label>
+            Oud URL:
+            <input id="old" type="text" value="" />
+        </label>
+    </p>
+        <p>
+        <label>
+            Nieuwe URL:
+            <textarea id="new"></textarea>
+        </label>
+    </p>
+        
+
+        <script>
+            var oldInput = document.getElementById("old");
+            var newInput = document.getElementById("new");
+
+            function handle() {
+
+                newInput.value = oldInput.value.replace("article.dnr", "article-editor.dnr");
+
+                newInput.select();
+
+                document.execCommand('copy');
+            }
+
+            oldInput.addEventListener("change", this.handle);
+        </script>
+    </body>
+</head>
