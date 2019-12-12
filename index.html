@@ -10,7 +10,7 @@
             var oldInput = document.getElementById("old");
 
             function handle() {
-                window.location = oldInput.value.replace("article.dnr", "article-editor.dnr");
+                window.location = oldInput.value.replace("article.dnr", "article-editor.dnr").replace("http://", "https://");
             }
 
             oldInput.addEventListener("change", this.handle);
