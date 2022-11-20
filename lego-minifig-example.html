@@ -2,32 +2,33 @@
 <html>
     <head>
         <link rel="stylesheet" href="./css/lego-minifig-example.css" />
+        <title>LEGOLAND® Scheveningen - Bezoek van Sam (#12345)</title>
     </head>
     <body>
-        <header>
-            <img src="./images/legolandheader.png" alt="LEGOLAND® Scheveningen"/>
+        <header class="header">
+            <img class="header-image" src="./images/legolandheader.png" alt="LEGOLAND® Scheveningen"/>
         </header>
-        <article>
-            <h1>Sam <a class="unique" href="./">#12345</a></h1>
-            <div class="container">
-                <aside>
-                    <img class="profile-picture" src="./images/minifigwithqr.png" />
-                </aside>
-                <main>
-                    <h2>Gedeelde creaties</h2>
-                    <div class="grid">
-                        <div class="grid-item">
-                            <img src="./images/photo1.png" />
-                        </div>
-                        <div class="grid-item">
-                            <img src="./images/photo2.png" />
-                        </div>
-                        <div class="grid-item">
-                            <img src="./images/photo3.png" />
-                        </div>
-                    </div>
+        <article class="profile">
+            <header class="profile-summary">
+                <h1 class="profile-name">Sam <a class="unique-code" href="./lego-minifig-example.html">#12345</a></h1>
+                <div class="profile-picture">
+                    <img src="./images/minifigwithqr.png" />
+                </div>
+            </header>
+            <main>
+                <h2 class="profile-section">Gedeelde creaties</h2>
+                <ul class="shared-images">
+                    <li class="shared-image">
+                        <img src="./images/photo1.png" />
+                    </li>
+                    <li class="shared-image">
+                        <img src="./images/photo2.png" />
+                    </li>
+                    <li class="shared-image">
+                        <img src="./images/photo3.png" />
+                    </li>
+                </ul>
                 </main>
-            </div>
         </article>
     </body>
 </html>
